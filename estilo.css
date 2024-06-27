@@ -1,0 +1,121 @@
+/* Estilo base */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #f0f9ff, #cbebff);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #4c90af;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Main */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Introducción */
+.introduccion {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Materias */
+.materias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.materia {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.materia:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.materia a {
+    text-decoration: none;
+    color: black;
+}
+
+.materia img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes highlight {
+    0% {
+        box-shadow: 0 0 10px rgba(0,255,0,0.7);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0,255,0,0.7);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4c90af;
+    color: white;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+}
