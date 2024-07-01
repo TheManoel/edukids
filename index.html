@@ -3,48 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Académica para Niños</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Alimentos Saludables</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="Logo" class="logo">
-        <h1>Bienvenidos a la Página Académica</h1>
+    <header class="header-food">
+        <h1 class="header-food-content"><a href="index.html">Aliméntate</a></h1>
     </header>
     <main>
-        <section class="introduccion">
-            <p>Explora las diferentes materias y descubre contenidos educativos interesantes para aprender y divertirte.</p>
-        </section>
-        <section class="materias">
-            <div class="materia" onclick="highlight(this)">
-                <a href="materias/matematicas.html">
-                    <h2>Matemáticas</h2>
-                    <img src="img/matematicas.png" alt="Matemáticas">
-                </a>
-            </div>
-            <div class="materia" onclick="highlight(this)">
-                <a href="materias/ciencias.html">
-                    <h2>Ciencias</h2>
-                    <img src="img/ciencias.png" alt="Ciencias">
-                </a>
-            </div>
-            <div class="materia" onclick="highlight(this)">
-                <a href="materias/historia.html">
-                    <h2>Historia</h2>
-                    <img src="img/historia.png" alt="Historia">
-                </a>
-            </div>
-            <div class="materia" onclick="highlight(this)">
-                <a href="materias/lenguaje.html">
-                    <h2>Lenguaje</h2>
-                    <img src="img/lenguaje.png" alt="Lenguaje">
-                </a>
-            </div>
+        <section class="categories-grid">
+            <a href="frutas_verduras/detalle.html" class="category-link"> <div class="category">Frutas y Verduras</div></a>
+            <a href="cereales_tuberculos/detalle.html" class="category-link"> <div class="category">Cereales y Tubérculos</div></a>
+            <a href="proteinas/detalle.html" class="category-link"> <div class="category">Proteínas</div></a>
+            <a href="lacteos_sustitutos/detalle.html" class="category-link"> <div class="category">Lácteos y Sustitutos</div></a>
+            <a href="grasas_aceites/detalle.html" class="category-link"> <div class="category">Grasas y Aceites</div></a>
+            <a href="azucares_dulces/detalle.html" class="category-link"> <div class="category">Azúcares y Dulces</div></a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Página Académica para Niños</p>
+        <p>&copy; 2024 Aliméntate - María Menéndez Sarasúa</p>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>
