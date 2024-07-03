@@ -6,8 +6,8 @@
         <title>Aliméntate - Azúcares y Dulces</title>
       
         <meta name="robots" content="noindex">
-      
-        <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=dmcVIE1ztYMm&format=png&color=000000">
         <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
         <link rel="canonical" href="https://codepen.io/iamjoshellis/pen/wWVgVe">
       
@@ -15,7 +15,6 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
       
         <style id="INLINE_PEN_STYLESHEET_ID">
-            
           @charset "UTF-8";
       /** 
       * Make flexbox grids super easy!
@@ -24,8 +23,19 @@
       * @param $margin  —  Margin with unit
       */
       .flexgrid a{
-        color: aliceblue;display: inline-block;width:100%;height:100%;text-decoration: none;
+        display: block;
+        text-align: center; color: aliceblue;display: inline-block;width:100%;height:100%;text-decoration: none;
             }
+
+            .flexgrid .thing a {
+    display: flex; /* Utilizamos flexbox dentro del enlace también */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Elimina la decoración del enlace */
+    color: aliceblue; /* Asegura que el texto sea visible */
+}
       @media screen and (min-width: 600px) and (max-width: 799px) {
         .flexgrid .container {
           display: flex;
@@ -136,11 +146,10 @@
         padding: 2rem 1rem;
       }
       .flexgrid .thing {
+        display: block;
+        text-align: center;
         color: #FEFEFE;
         font-size: 200%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         min-height: 150px;
         margin-bottom: 1rem;
         cursor: pointer;
@@ -340,17 +349,21 @@
             <div class='thing'><a href="../multimedia/videos.html" style="color: aliceblue; text-decoration: none;">Ver vídeos</a></div>
           </div>
     </main>
-    <footer class="footer" style="
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
-">
-        <div class="container">
-            <span class="text-muted">© 2024 Aliméntate - María Menéndez Sarasúa</span>
-        </div>
-    </footer>
+    <footer id="footer_detalle" class="footer fixed-bottom">
+      <div class="text-center" style="
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+        margin-top: 3em;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        background-color: #e2e2e2;
+    ">
+          <span>© 2024 Aliméntate - María Menéndez Sarasúa</span>
+      </div>
+  </footer>
 </body>
 </html>
